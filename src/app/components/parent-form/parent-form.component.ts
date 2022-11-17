@@ -1,11 +1,12 @@
+import { ChildrenCvaComponent } from './../children-cva/children-cva.component';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-parent-form',
   templateUrl: './parent-form.component.html',
   styleUrls: ['./parent-form.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  standalone: true,
+  imports: [ChildrenCvaComponent],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ParentFormComponent {
-
-}
+export class ParentFormComponent {}

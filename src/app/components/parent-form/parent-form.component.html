@@ -1,3 +1,5 @@
 <p>parent-form works!</p>
 
-<app-children-cva></app-children-cva>
+<form [formGroup]="parentFormGroup">
+  <app-children-cva [formControl]="parentFormControl"></app-children-cva>
+</form>
